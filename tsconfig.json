@@ -15,6 +15,14 @@
     "incremental": true,
     "plugins": [
       {
+        "name": "next",
+        "options": {
+          "parserOptions": {
+            "project": "./tsconfig.json"
+          }
+        }
+      },
+      {
         "name": "next"
       }
     ],
@@ -23,5 +31,10 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/explicit-module-boundary-types": "error",
+    "@typescript-eslint/react/prop-types": "error"
+  }
 }
