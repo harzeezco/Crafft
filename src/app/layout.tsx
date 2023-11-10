@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${space.className} text-white`}>
+      <body className={`${space.className} text-white relative`}>
         <Header />
         {children}
         {/* <Footer /> */}
