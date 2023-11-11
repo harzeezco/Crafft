@@ -1,4 +1,4 @@
-import { NavLinksProp } from './types';
+import { ComponentProps, NavLinksProp } from './types';
 
 export const NAV_LINKS: NavLinksProp = [
   {
@@ -71,4 +71,36 @@ export const NAV_LINKS: NavLinksProp = [
   },
 ];
 
-export const LINK = [{}];
+export const COMPANIES: ComponentProps[] = [
+  {
+    id: 0,
+    img: 'binance.png',
+    alt: 'binance logo',
+    href: '',
+  },
+  {
+    id: 1,
+    img: 'coinbase.png',
+    alt: 'coinbase logo',
+    href: '',
+  },
+
+  {
+    id: 2,
+    img: 'coinigy.png',
+    alt: 'coinigy logo',
+    href: '',
+  },
+  {
+    id: 3,
+    img: 'crypto-valley.png',
+    alt: 'crypto valley logo',
+    href: '',
+  },
+  {
+    id: 4,
+    img: 'crypto.png',
+    alt: 'crypto logo',
+    href: '',
+  },
+];

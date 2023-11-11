@@ -57,7 +57,7 @@ function Star({ color = '#1E50FF' }: StarProps) {
       </svg>
 
       <span
-        className='fav-round absolute w-6 h-6 inline-block rounded-full'
+        className='fav-round absolute z-50 w-6 h-6 inline-block rounded-full'
         style={{ borderColor: `${color}` }}
       />
       <span className='fav-sparkle absolute w-6 h-6'>

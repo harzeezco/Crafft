@@ -9,7 +9,7 @@ function Mobile() {
 
   return (
     <div
-      className={`lg:hidden py-8 px-7 ${
+      className={`lg:hidden py-8 px-7 z-50 ${
         isShow ? 'flex items-center justify-between' : ''
       }`}
     >

@@ -14,3 +14,10 @@ export type MobileInputProps = {
   isShow: boolean;
   onclick: (value: boolean) => void;
 };
+
+export type ComponentProps = {
+  id: number;
+  img: string;
+  alt: string;
+  href: string;
+};

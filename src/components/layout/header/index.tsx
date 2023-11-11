@@ -4,10 +4,10 @@ import Mobile from './mobile';
 
 function Header() {
   return (
-    <>
+    <div className='bg-dark-800'>
       <Desktop />
       <Mobile />
-    </>
+    </div>
   );
 }
 

@@ -6,7 +6,7 @@ import HeaderNav from '@/components/navigation/header-nav';
 
 function Desktop() {
   return (
-    <div className='lg:flex justify-between items-center py-8 max-w-container mx-auto text-white gap-8 hidden px-7'>
+    <div className='lg:flex justify-between items-center py-8 max-w-container mx-auto text-white gap-8 hidden px-7 relative z-50'>
       <Image priority src='/svg/logo.svg' height={34} width={99} alt='logo' />
 
       <Input
