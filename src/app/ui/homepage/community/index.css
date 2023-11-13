@@ -1,0 +1,23 @@
+/* .img-on-top::before {
+  content: '';
+  position: absolute;
+  z-index: 100;
+  left: 40%;
+  top: -40%;
+  width: 100%;
+  height: 220px;
+  background-image: url('/png/artifact.png');
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .img-on-top::before {
+  z-index: 100;
+  left: auto;
+  right: auto;
+  top: -35%;
+  width: 100%;
+ 
+
+}
+} */

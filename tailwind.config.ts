@@ -55,9 +55,12 @@ const config: Config = {
         'dark-700': '#131528',
         lightDark: '#131528',
         'blue-700': '#1E50FF',
+        'green-700': '#56BD83',
       },
       backgroundColor: {
         'blue-700': '#1E50FF',
+        'blue-900': '#05113B',
+        'dark-700': '#07010e',
         'dark-800': '#020005',
         'dark-900': '#131528',
         'yellow-700': '#ffc935',

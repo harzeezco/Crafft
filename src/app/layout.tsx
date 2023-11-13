@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import React from 'react';
 import { Space_Grotesk } from 'next/font/google';
-import '../styles/globals.css';
-import '../styles/tailwind.css';
-import Header from '@/components/layout/header';
-// import Footer from '@/components/layout/footer';
+import './styles/globals.css';
+import './styles/tailwind.css';
+import Header from './ui/header';
+import Footer from './ui/footer';
 
 const space = Space_Grotesk({
   subsets: ['latin'],
@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className={`${space.className} text-white relative`}>
         <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
