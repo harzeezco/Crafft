@@ -5,6 +5,7 @@ import './styles/globals.css';
 import './styles/tailwind.css';
 import Header from './ui/header';
 import Footer from './ui/footer';
+import QueryProvider from './provider/query-provider';
 
 const space = Space_Grotesk({
   subsets: ['latin'],
@@ -25,7 +26,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${space.className} text-white relative`}>
         <Header />
-        {children}
+        <QueryProvider>{children}</QueryProvider>
         <Footer />
       </body>
     </html>

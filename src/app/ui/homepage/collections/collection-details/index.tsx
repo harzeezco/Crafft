@@ -1,12 +1,19 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import Image from 'next/image';
 import Button from '@/app/ui/Button';
 
 type DetailsProp = {
   index: number;
+  assetName: string;
+  bid: string;
+  sellarBid: string;
+  img: string;
 };
 
-function Details({ index }: DetailsProp) {
+function Details({ index, assetName, bid, sellarBid, img }: DetailsProp) {
+  const sellar = parseFloat(sellarBid).toFixed(3);
+
   return (
     <div
       role='button'
@@ -18,27 +25,29 @@ function Details({ index }: DetailsProp) {
           <Image src='/png/heart.png' alt='heart' width={20} height={20} />
         </div>
         <Image
-          src='/png/asset-image.png'
+          src={img}
           alt='asset'
           height={330}
           width={330}
-          className='h-200 transition-all duration-200 ease-linear lg:h-[300px]'
+          className='h-200 transition-all duration-200 ease-linear lg:h-[300px] rounded-xl'
         />
         <div className='mt-[10px]'>
           <h1 className='text-[22px] font-bold leading-8 text-left'>
-            LuppyclubOfficial
+            {assetName}
           </h1>
           <p className='left-7 flex gap-x-2 text-lg'>
             <span className='text-gray-300'>Created by</span>
             <span className='text-blue-700' title='LuppyclubOfficial'>
-              LuppyclubOfficial
+              {assetName}
             </span>
           </p>
         </div>
         <div className='mt-5 flex items-center justify-between lg:group-hover:scale-0 transition-all'>
           <div>
             <span className='text-gray-300'>Current Bid</span>
-            <p>1.0324 ETH</p>
+            <p>
+              <span className=''>{sellar}</span> {bid.slice(0, 3).toUpperCase()}
+            </p>
           </div>
           <div>
             <span className='text-gray-300'>Remaining Time</span>

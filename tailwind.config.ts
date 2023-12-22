@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontSize: {
-        80: '80px',
+        80: '75px',
       },
       lineHeight: {
         90: '90px',
